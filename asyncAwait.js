@@ -70,9 +70,8 @@ async function loadUsers() {
       phone.textContent = `Phone: ${user.phone}`;
 
       const website = document.createElement("a");
-      // website.textContent = `Website: ${user.website}`;
-      website.href = `mailto:${user.website}`;
-      website.textContent = website;
+      website.href = user.website;
+      website.textContent = `Website: ${user.website}`;
 
       const company = document.createElement("p");
       company.textContent = `Company: ${user.company.name}`;
